@@ -23,13 +23,11 @@ write.csv(df,f,append = FALSE,sep = ",")
 anonymise(filename) #for single file
 
 filename <-"filter616b34bc62655_csv.csv"
-filenames <- list.files(pattern="*.csv")
 
+filenames <- list.files(pattern="*.csv") #for many files
 tapply(filenames,anonymise)
 
 comments <- read.csv(filename) 
-
-
 
 #defining blank output and emojis
 outputs <- data.frame()

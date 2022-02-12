@@ -22,3 +22,4 @@ anonymise <- function(f){
 #takes relevant files and applies the anonymisation
 filenames <- list.files(pattern="filter[0-9A-Za-z]*.csv")
 sapply(filenames,anonymise)
+
